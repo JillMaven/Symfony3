@@ -17,6 +17,10 @@ services:
             MYSQL_DATABASE: ${MYSQL_DATABASE}
         ports:
             - "3306:3306"
+        networks:
+            default:
+                aliases:
+                    - 'mysql.m-2i-tech.academy'
 
     php:
         build: .docker/php
