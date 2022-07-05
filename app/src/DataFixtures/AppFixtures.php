@@ -62,6 +62,7 @@ class AppFixtures extends Fixture
             $product->setQuantity(mt_rand(1,15));
             $product->setDescription('Ceci est le produit '.$i);
             $product->setIsNewArrival(true);
+            $product->setImage('');
             $manager->persist($product);
         }
 
